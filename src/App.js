@@ -1,12 +1,22 @@
-import MyHeading, { MyHeading2 as H2, MyHeading3 as H3 } from "./components/MyHeading";
-const a = 200;
+// import Header from "./components/Header";
+import "./styles/App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+import Contact from './components/Contact';
+import About from './components/About';
+import Header from "./components/Header";
+import Product from "./components/Product";
 function App() {
-  return <div>
-    <MyHeading name="hello" sur="world" value="200"/>
-    <h1>Hello World {a}</h1>
-    <p>First Functional Component</p>
-  </div>
+  return <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/product/:id" element={<Product />} />
+      <Route path="*" element={<div>Page not Found</div>} />
+    </Routes>
+  </Router>
 }
 
 export default App;
-export { H2, H3 };
