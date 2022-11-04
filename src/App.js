@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import MyHeading, { MyHeading2 as H2, MyHeading3 as H3 } from "./components/MyHeading";
+const a = 200;
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>
+    <MyHeading name="hello" sur="world" value="200"/>
+    <h1>Hello World {a}</h1>
+    <p>First Functional Component</p>
+  </div>
 }
 
 export default App;
+export { H2, H3 };
