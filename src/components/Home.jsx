@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { ProductMap } from './Product';
-import Coin from './Coin';
 
 const Home = () => {
     const dataArray = [1, 2, 3, 4];
@@ -31,8 +30,7 @@ const Home = () => {
                 {
                     dataArray.map((i) => (
                         <>
-                            {/* <ProductMap value={i} key={i} /> */}
-                            <Coin name={"Bitcoin"} symbol={"BTC"} />
+                            <ProductMap value={i} key={i} />
                         </>
                     ))
                 }

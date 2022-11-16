@@ -1,10 +1,13 @@
 import React from 'react';
 
-function Coin({ name, symbol }) {
+const Coin = ({ name, symbol, imgSrc, price }) => {
+    console.log("Inside Coin Component");
     return (
-        <div>
-            <h2>{symbol}</h2>
-            <h3>{name}</h3>
+        <div className='coin'>
+            <img src={imgSrc} alt={name} />
+            <h1>{symbol}</h1>
+            <p>{name}</p>
+            <h4>$ {price}</h4>
         </div>
     )
 }
