@@ -16,15 +16,17 @@ const Redux = () => {
             //type is trigger name which can be found in reducer.js
             //data can be send along with functionName in payload
             type: "ourSecondCase",
-            payload: ["Portugal", "Brazil", "Germany"]
+            payload: ["Nepal", "Nepal1", "Nepal2"]
         })
     }
     return (
-        <div>
-            Populate Data :<br />
-            <button onClick={handler}>Click 1</button>
-            <button onClick={handler2}>Click 2</button>
-        </div>
+        <>
+            <div>
+                Populate Data :<br />
+                <button onClick={handler}>Click 1</button>
+                <button onClick={handler2}>Click 2</button>
+            </div>
+        </>
     )
 }
 

@@ -10,6 +10,7 @@ const Header = () => {
       <Link to="/contact">Contact</Link>
       <Link to="/redux">Redux</Link>
       <Link to="/redux-dashboard">Redux Dashoard</Link>
+      <Link to="/calculator">Calculator</Link>
     </nav>
   );
 };
