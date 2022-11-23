@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Product from "./components/Product";
 import Redux from "./components/Redux";
 import ReduxDashboard from "./components/ReduxDashboard";
+import Calculator from "./components/Calculator";
 function App() {
   return <Router>
     <Header />
@@ -18,6 +19,7 @@ function App() {
       <Route path="/product/:id" element={<Product />} />
       <Route path="/redux" element={<Redux />} />
       <Route path="/redux-dashboard" element={<ReduxDashboard />} />
+      <Route path="/calculator" element={<Calculator />} />
       <Route path="*" element={<div>Page not Found</div>} />
     </Routes>
   </Router>
