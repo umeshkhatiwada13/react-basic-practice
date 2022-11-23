@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ProductMap } from './Product';
 
 const About = () => {
-
-
-
   const dataArray = [1, 2, 3, 4];
   //defining useState hook
   // temp is variable name and setTemp is setter used to populate the variable later on program flow
@@ -37,9 +34,6 @@ const About = () => {
             </>
           ))
         }
-      </div>
-      <div>
-
       </div>
     </>
   )
